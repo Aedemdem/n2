@@ -41,30 +41,25 @@
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content  text-white">
                             <div class="text-center">
-                                <h6>Pertanyaan 2</h6>
-                                <br>
                                 <h4>
-                                    KAPAN KAMU AJAK AKU UNTUK KERJA DI PRODI VIA TELFON?
+                                    KARENA KAMU BENAR, KAMU BERHAK MENDAPATKAN HADIAH INI
                                 </h4>
                                 <br>
-                            </div>
-                            <button class="btn btn-primary btn-xl"
-                                style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
-                                onClick="jawabanBenar()">
-                                12 November 2022
-                            </button><br>
-                            <button class="btn btn-primary btn-xl"
-                                style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
-                                onClick="jawabanSalah()">
-                                14 November 2022
-                            </button>
-                            <div class="text-center">
+                                <h4>----</h4><br>
+                                <img width="100%" src="assets/img/reward1.jpg">
+                                <br><br>
+                                <h6>
+                                    Semoga buku ini bisa jadi tempat mencurahkan apa yang kamu rasain wkwk
+                                    Apalagi puisi puisi yang biasa kamu chat ke aku, silahkan dituangkan dibuku ini..
+                                    <br><br>KU TUNGGU BUKU TERBITAN MU YAA WKWKWK
+                                </h6>
                                 <br>
-                                <h4>
-                                    Selamat mengingat dan scroll down history call yaa awokawokawok
-                                </h4>
+                                <button class="btn btn-primary btn-xl"
+                                    style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
+                                    onClick="next()">
+                                    OKEYYY LET’S GO FOR QUESTION 2
+                                </button>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -73,48 +68,11 @@
         <!-- </div> -->
     </section>
     <script>
-        function jawabanBenar() {
-            Swal.fire({
-                title: 'Nice!',
-                text: 'Betul Sekali',
-                imageUrl: 'https://media.tenor.com/ogsClPgCYcAAAAAi/mochi-mochi-mochi.gif',
-                imageWidth: 300,
-                imageAlt: 'A tall image',
-                allowOutsideClick: false,
-                confirmButtonColor: "#4287f5"
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    Swal.fire('Sakieu heula Nurul, cangkeul wkwk', 'Masih diedit kan gambarna??', 'success')
-                }
-            })
-        }
-        function jawabanSalah() {
-            Swal.fire({
-                title: 'Uuhh!',
-                text: 'Salah..',
-                imageUrl: 'https://gifdb.com/images/high/mochi-peach-cat-chill-pnximb5fhh4hponn.gif',
-                imageWidth: 300,
-                imageAlt: 'A tall image',
-                allowOutsideClick: false,
-                confirmButtonColor: "#4287f5"
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    Swal.fire('Etdahh', '', 'error')
-                }
-            })
-        }
-        
+
         // ke halaman selanjutnya
         function next() {
-            // location.replace("rwd1.html")
+            location.replace("023947.html")
         }
-
-        function home() {
-            location.replace("index.html")
-        }
-
     </script>
 
     <!-- Footer-->
