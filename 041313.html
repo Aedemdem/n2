@@ -37,40 +37,79 @@
     <section class="page-section text-white mb-0" id="prolog">
         <div>
             <div class="divider-custom">
-                <!-- <div class="bg-prakata col-md-6 col-lg-4 mb-5" style=" width: 80%; padding: 30px; "> -->
+                <div class="bg-prakata col-md-6 col-lg-4 mb-5" style=" width: 80%; padding: 30px; ">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content  text-white" style=" width: 80%; padding: 30px; ">
+                        <div class="portfolio-item-caption-content  text-white">
                             <div class="text-center">
+                                <h6>Pertanyaan 4</h6>
+                                <br>
                                 <h4>
-                                    Quiz Untuk Bestiekoeh <br> NAURAH IZZATUL AULIYA
+                                    PILIH TANGGAL DI BAWAH INI YANG PENGEN KAMU ULANG KALO KAMU INGET INI TANGGAL APA WKWK
                                 </h4>
                                 <br>
-                                <h4>----</h4><br>
-                                <h6>HEHEHEHEHEHEHE<br>
-                                    HARUS JAWAB YANG BENER YAA<br>
-                                    AWAS AJA KALO ADA SALAH<br>
-                                    LU GUA END  😏
-                                </h6>
-                                <br>
-                                <button class="btn btn-primary btn-xl"
-                                    style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
-                                    onClick="next()">
-                                    OKEYYY LET’S GO FOR QUESTION 1
-                                </button>
                             </div>
+                            <button class="btn btn-primary btn-xl"
+                                style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
+                                onClick="jawabanBenar()">
+                                19 Maret 2023
+                            </button><br>
+                            <button class="btn btn-primary btn-xl"
+                                style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
+                                onClick="jawabanBenar2()">
+                                15 Juli 2023
+                            </button>
+                        
+
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
         </div>
         <!-- </div> -->
     </section>
     <script>
-
+        function jawabanBenar() {
+            Swal.fire({
+                title: 'Ahh',
+                text: 'Ada apa nih di tanggal 19 Maret 2023 wkwk',
+                imageUrl: 'https://media.tenor.com/ogsClPgCYcAAAAAi/mochi-mochi-mochi.gif',
+                imageWidth: 300,
+                imageAlt: 'A tall image',
+                allowOutsideClick: false,
+                confirmButtonColor: "#4287f5"
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    next();
+                }
+            })
+        }
+        function jawabanBenar2() {
+            Swal.fire({
+                title: 'Okeyy',
+                text: 'Ada apa nih di tanggal 15 Juli 2023 wkwk',
+                imageUrl: 'https://media.tenor.com/ogsClPgCYcAAAAAi/mochi-mochi-mochi.gif',
+                imageWidth: 300,
+                imageAlt: 'A tall image',
+                allowOutsideClick: false,
+                confirmButtonColor: "#4287f5"
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    next();
+                }
+            })
+        }
+        
         // ke halaman selanjutnya
         function next() {
-            location.replace("012456.html")
+            location.replace("46rwd4.html")
         }
+
+        function home() {
+            location.replace("index.html")
+        }
+
     </script>
 
     <!-- Footer-->

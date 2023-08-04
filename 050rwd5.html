@@ -37,39 +37,113 @@
     <section class="page-section text-white mb-0" id="prolog">
         <div>
             <div class="divider-custom">
-                <!-- <div class="bg-prakata col-md-6 col-lg-4 mb-5" style=" width: 80%; padding: 30px; "> -->
+                <div class="bg-prakata col-md-6 col-lg-4 mb-5" style=" width: 80%; padding: 30px; ">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content  text-white" style=" width: 80%; padding: 30px; ">
+                        <div class="portfolio-item-caption-content  text-white">
                             <div class="text-center">
                                 <h4>
-                                    Quiz Untuk Bestiekoeh <br> NAURAH IZZATUL AULIYA
+                                    KAMU BISA SCAN ATAU TAP GAMBAR INI DULU BUAT LIAT AKUN INSTAGRAMNYA
                                 </h4>
                                 <br>
                                 <h4>----</h4><br>
-                                <h6>HEHEHEHEHEHEHE<br>
-                                    HARUS JAWAB YANG BENER YAA<br>
-                                    AWAS AJA KALO ADA SALAH<br>
-                                    LU GUA END  😏
-                                </h6>
+                                <a><img width="100%" onclick="tap();" src="assets/img/instascan.jpeg"
+                                        style="max-width: 500px;"></a>
+                                <br><br>
                                 <br>
-                                <button class="btn btn-primary btn-xl"
+                                <!-- <button class="btn btn-primary btn-xl"
                                     style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
                                     onClick="next()">
-                                    OKEYYY LET’S GO FOR QUESTION 1
-                                </button>
+                                    OKEYYY LET’S GO FOR QUESTION 2
+                                </button> -->
                             </div>
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
         </div>
         <!-- </div> -->
     </section>
     <script>
+        let i = 0;
+        function tap() {
+            i++;
+            if (i == 1) {
+                Swal.fire('Aduh ga mucul nih')
+            }
+            if (i == 2) {
+                Swal.fire('Kurang kenceng tap nya')
+            }
+            if (i == 4) {
+                Swal.fire('Masih belum')
+            }
+            if (i == 5) {
+                Swal.fire('Semangat')
+            }
+            if (i == 6) {
+                Swal.fire({
+                    allowOutsideClick: false,
+                    title: 'Kenapa kucing suaranya meong?',
+                    confirmButtonText: 'Ga tau',
+                   
+                })
+            }
+            if (i == 7) {
+                Swal.fire({
+                    allowOutsideClick: false,
+                    title: 'Kenapa rindu ga bisa diatur, apa gak kebeli sisir rambut?',
+                    confirmButtonText: 'Astaga dragon!',
+                   
+                })
+            }
+            if (i == 8) {
+                Swal.fire({
+                    allowOutsideClick: false,
+                    title: 'Naurah kalo di balik jadi haruaN',
+                    confirmButtonText: 'Lanjut kak',
+                   
+                })
+            }
+            if (i == 9) {
+                Swal.fire({
+                    allowOutsideClick: false,
+                    title: 'Kenapa prodi mucis namanya d3 kebidanan, d3 keperawatan tapi farmasi gak d3 kefarmasian? ',
+                    confirmButtonText: 'Bodo amat',
+                   
+                })
+            }
+            if (i == 10) {
+                Swal.fire({
+                    position: 'bottom',
+                    allowOutsideClick: false,
+                    title: 'Santai bro, yaudahh nihh',
+                    confirmButtonText: 'Lanjut',
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            allowOutsideClick: false,
+                            position: 'top',
+                            title: 'Asli ini mah wkwk',
+                            confirmButtonText: 'Lihat akun',
+                        }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                next();
+                            }
+                        })
+                    }
+                })
+            }
+            if (i >10) {
+                i = 0;
+            }
+            console.log(i);
+        }
 
         // ke halaman selanjutnya
         function next() {
-            location.replace("012456.html")
+            window.open(
+                "https://www.instagram.com/galeri_naurahia/?hl=en", "_blank");
         }
     </script>
 

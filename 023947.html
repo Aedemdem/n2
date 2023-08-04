@@ -85,7 +85,7 @@
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('Sakieu heula Nurul, cangkeul wkwk', 'Masih diedit kan gambarna??', 'success')
+                    next();
                 }
             })
         }
@@ -101,14 +101,14 @@
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('Etdahh', '', 'error')
+                    home();
                 }
             })
         }
         
         // ke halaman selanjutnya
         function next() {
-            // location.replace("rwd1.html")
+            location.replace("506rwd2.html")
         }
 
         function home() {
