@@ -38,34 +38,50 @@
         <div>
             <div class="divider-custom">
                 <!-- <div class="bg-prakata col-md-6 col-lg-4 mb-5" style=" width: 80%; padding: 30px; "> -->
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content  text-white" style=" width: 80%; padding: 30px; ">
-                            <div class="text-center">
-                                <h4>
-                                    Quiz Untuk Bestiekoeh <br> NAURAH IZZATUL AULIYA
-                                </h4>
-                                <br>
-                                <h4>----</h4><br>
-                                <h6>HEHEHEHEHEHEHE<br>
-                                    HARUS JAWAB YANG BENER YAA<br>
-                                    AWAS AJA KALO ADA SALAH<br>
-                                    LU GUA END  😏
-                                </h6>
-                                <br>
-                                <button class="btn btn-primary btn-xl"
-                                    style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
-                                    onClick="next()">
-                                    OKEYYY LET’S GO FOR QUESTION 1
-                                </button>
-                            </div>
+                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="portfolio-item-caption-content  text-white" style=" width: 80%; padding: 30px; ">
+                        <div class="text-center">
+                            <h4>
+                                Quiz Untuk Bestiekoeh <br> NAURAH IZZATUL AULIYA
+                            </h4>
+                            <br>
+                            <h4>----</h4><br>
+                            <!-- <h6>HEHEHEHEHEHEHE<br>
+                                HARUS JAWAB YANG BENER YAA<br>
+                                AWAS AJA KALO ADA SALAH<br>
+                                LU GUA END 😏
+                            </h6> -->
+                            <br>
+                            <button class="btn btn-primary btn-xl"
+                                style="width: 100%; max-width: 400px;  display: block; margin-left: auto; margin-right: auto;"
+                                onClick="laetsGo()">
+                                OKEYYY LET’S GO FOR QUESTION 1
+                            </button>
                         </div>
                     </div>
+                </div>
                 <!-- </div> -->
             </div>
         </div>
         <!-- </div> -->
     </section>
     <script>
+        function laetsGo() {
+            Swal.fire({
+                title: 'Disclaimer!',
+                text: 'HARUS JAWAB YANG BENER YAA AWAS AJA KALO ADA SALAH LU GUA END 😏',
+                imageUrl: 'https://media.tenor.com/g8lOIZutvtoAAAAC/kyungsoo-do.gif',
+                imageWidth: 200,
+                imageAlt: 'image',
+                allowOutsideClick: false,
+                confirmButtonColor: "#4287f5"
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    next();
+                }
+            })
+        }
 
         // ke halaman selanjutnya
         function next() {
